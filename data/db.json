@@ -1,0 +1,80 @@
+{
+    "recipes": [
+      {
+        "id": 1,
+        "title": "Spaghetti Bolognese",
+        "category": "Italian",
+        "image": "https://www.recipetineats.com/tachyon/2018/07/Spaghetti-Bolognese.jpg?resize=900%2C1260&zoom=1",
+        "ingredients": [
+          "200g spaghetti",
+          "100g ground beef",
+          "1 cup tomato sauce",
+          "1 onion",
+          "2 cloves garlic",
+          "Salt",
+          "Pepper"
+        ],
+        "instructions": "Cook spaghetti according to package instructions. In a pan, cook ground beef with chopped onions and garlic. Add tomato sauce, salt, and pepper, and simmer for 15 minutes. Serve sauce over spaghetti."
+      },
+      {
+        "id": 2,
+        "title": "Vegan Tacos",
+        "category": "Mexican",
+        "image": "https://lovingitvegan.com/wp-content/uploads/2019/02/Vegan-Tacos-15.jpg",
+        "ingredients": [
+          "4 corn tortillas",
+          "1 cup black beans",
+          "1 avocado",
+          "1 tomato",
+          "1/4 cup cilantro",
+          "Salt",
+          "Lime juice"
+        ],
+        "instructions": "Heat tortillas in a pan. Fill with black beans, sliced avocado, diced tomato, and chopped cilantro. Add salt and lime juice to taste."
+      },
+      {
+        "id": 3,
+        "title": "Banana Pancakes",
+        "category": "Breakfast",
+        "image": "https://res.cloudinary.com/grow-me/image/fetch/c_fill,h_300,q_auto,w_300/f_auto,fl_lossy/https%3A%2F%2Flovingitvegan.com%2Fwp-content%2Fuploads%2F2018%2F06%2FVegan-Banana-Pancakes-6.jpg",
+        "ingredients": [
+          "1 banana",
+          "1 egg",
+          "1/2 cup oats",
+          "1/4 cup milk",
+          "1 tsp baking powder",
+          "Maple syrup (optional)"
+        ],
+        "instructions": "Blend banana, egg, oats, milk, and baking powder until smooth. Pour batter onto a hot skillet and cook until golden. Serve with maple syrup if desired."
+      }
+    ],
+    "categories": [
+      {
+        "id": 1,
+        "name": "Italian"
+      },
+      {
+        "id": 2,
+        "name": "Mexican"
+      },
+      {
+        "id": 3,
+        "name": "Breakfast"
+      },
+      {
+        "id": 4,
+        "name": "Vegan"
+      }
+    ],
+    "favorites": [
+      {
+        "userId": 1,
+        "recipeId": 2
+      },
+      {
+        "userId": 1,
+        "recipeId": 3
+      }
+    ]
+  }
+  
