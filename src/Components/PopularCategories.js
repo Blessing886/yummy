@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from 'react';
-import './PopularCategories.css';
 
 function PopularCategories() {
   const [categories, setCategories] = useState([]);
@@ -18,6 +17,7 @@ function PopularCategories() {
   return (
     <div className='popular-categories'>
       <h2>Popular Categories</h2>
+      <div className='category-container'>
       {categories.map((category) => (
       <div key={category.id} className='category-section'>
         <h3>{category.name}</h3>
@@ -33,6 +33,7 @@ function PopularCategories() {
         </ul>
       </div>
       ))}
+      </div>
     </div>
   )
 }
