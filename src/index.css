@@ -35,7 +35,7 @@ code {
 }
 
 .category-section {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   width: 100%;
   max-width: 1000px;
 }
@@ -51,7 +51,7 @@ code {
   padding: 0;
   gap: 10px;
   justify-content: center;
-  gap: 40px;
+  gap: 30px;
 }
 
 .recipe-item {
