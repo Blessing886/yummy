@@ -1,16 +1,22 @@
 import React, { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 
 function SearchDish() {
   const [searchMeal, setSearchMeal] = useState('');
-  const [recipes, setRecipe] = useState([]);
+  const [recipes, setRecipes] = useState([]);
+  const navigate = useNavigate();
 
   const filterRecipes = recipes
   .filter((recipe) => recipe.title.toLowerCase().includes(searchMeal.toLowerCase()));
 
+  const handleRecipeClick = (recipe) => {
+    navigate(`/recipe/${recipe.id}`);
+  }
+
   useEffect(() => {
     fetch("http://localhost:8000/recipes")
     .then((res) => res.json())
-    .then((data) => setRecipe(data))
+    .then((data) => setRecipes(data));
   }, []);
 
   return (
@@ -26,12 +32,13 @@ function SearchDish() {
       
       {searchMeal && (filterRecipes.length > 0 ? (
         filterRecipes.map((recipe) => (
-          <article className='recipe-item' key={recipe.id}>
+          <article className='recipe-item' key={recipe.id} onClick={() => handleRecipeClick(recipe)}>
            <img className='recipe-image' src={recipe.image} alt={recipe.title} />
            <h3>{recipe.title}</h3>
            <p>{recipe.category}</p>
           </article>
-        ))) : (<p>No recipes found</p>
+        ))
+      ) : (<p>No recipes found</p>
         ))}
       </div>
   )

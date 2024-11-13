@@ -1,12 +1,10 @@
-import PopularCategories from "../Components/PopularCategories";
-import SuperDelicious from "../Components/SuperDelicious";
+
 import React from 'react'
 
 function Home() {
   return (
     <div>
-        <PopularCategories />
-        <SuperDelicious />
+        <p>Yum Yum Yum</p>
     </div>
   )
 }
