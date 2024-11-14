@@ -25,8 +25,14 @@ function FormSubmit() {
         })
         .then((res) => res.json())
         .then((data) => {
-            console.log('Recipe added:', data)
+            console.log('Recipe added:', data);
+            setTitle('')
+            setImage('')
+            setCategory('')
+            setIngredients('')
+            setInstructions('')
         })
+      
     };
 
   return (
