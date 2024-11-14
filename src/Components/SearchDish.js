@@ -30,6 +30,7 @@ function SearchDish() {
       />
       <button>Search</button>
       
+      
       {searchMeal && (filterRecipes.length > 0 ? (
         filterRecipes.map((recipe) => (
           <article className='recipe-item' key={recipe.id} onClick={() => handleRecipeClick(recipe)}>
@@ -44,4 +45,4 @@ function SearchDish() {
   )
 }
 
-export default SearchDish
+export default SearchDish;
