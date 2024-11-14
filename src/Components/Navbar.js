@@ -8,6 +8,7 @@ function Navbar() {
             <li><Link to="/">Home</Link></li>
             <li><Link to="/popular-categories">Popular Categories</Link></li>
             <li><Link to="/super-delicious">Super Delicious</Link></li>
+            <li><Link to="/form-submit">Submit Recipe</Link></li>
     </nav>
   )
 }
