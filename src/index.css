@@ -15,30 +15,47 @@ code {
 nav {
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
   background-color: orangered;
   padding: 1rem 2rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   color: white;
   box-shadow: 0px, 0px 0px rgba(0, 0, 0, 0.2);
   z-index: 1000;
 }
 
+nav .nav-links {
+  display: flex;
+  margin-left: auto;
+}
+
 .h1 {
   margin: 0;
+  margin-right: 20px;
   font-size: 1.5rem;
   font-weight: bold;
   color: rgb(255, 102, 0);
 }
 
-nav li {
-  list-style: none;
+nav ul {
   display: flex;
-  margin: 0;
   padding: 0;
-  gap: 0rem
+  margin: 0;
+  list-style: none;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+nav li {
+  margin-right: 10px;
+  padding: 0;
+}
+
+nav li:last-child {
+  margin-right: 0;
 }
 
 nav a {
@@ -107,7 +124,7 @@ body, .search-input {
 }
 
 .search-input button {
-  padding: 14px 20px;
+  padding: 12px 20px;
   font-size: 1rem;
   background-color: #f4b400;
   color: white;
@@ -236,3 +253,22 @@ button {
   transition: 0.2s ease;
 }
 
+.main-content {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.main-image {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.image-item {
+  width: 400px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+}
