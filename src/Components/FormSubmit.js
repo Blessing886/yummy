@@ -16,7 +16,7 @@ function FormSubmit() {
             instructions,
         };
 
-        fetch('http://localhost:8000/recipes', {
+        fetch('https://yummy-app-back-end.onrender.com/recipes', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

@@ -6,7 +6,7 @@ function RecipeDetails() {
     const [recipe, setRecipe] = useState(null);
 
     useEffect(() => {
-        fetch(`http://localhost:8000/recipes/${id}`)
+        fetch(`https://yummy-app-back-end.onrender.com/recipes/${id}`)
         .then((res) => res.json())
         .then((data) => setRecipe(data));
     }, [id]);

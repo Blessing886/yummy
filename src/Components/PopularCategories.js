@@ -5,11 +5,11 @@ function PopularCategories() {
   const [recipes, setRecipes] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:8000/categories')
+    fetch('https://yummy-app-back-end.onrender.com/categories')
     .then(res => res.json())
     .then(data => setCategories(data));
 
-    fetch('http://localhost:8000/recipes')
+    fetch('https://yummy-app-back-end.onrender.com/recipes')
     .then(res => res.json())
     .then(data => setRecipes(data));
   }, []);

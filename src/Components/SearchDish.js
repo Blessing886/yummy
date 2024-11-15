@@ -14,7 +14,7 @@ function SearchDish() {
   }
 
   useEffect(() => {
-    fetch("http://localhost:8000/recipes")
+    fetch("https://yummy-app-back-end.onrender.com/recipes")
     .then((res) => res.json())
     .then((data) => setRecipes(data));
   }, []);
