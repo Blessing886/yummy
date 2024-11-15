@@ -4,7 +4,7 @@
 --Blessing Okora
 
 ## Overview
-The **YUMMY!** app is a **recipe search app** enables users to search for recipes and view detailed information of each dish. users can also contribute by adding their own recipes to the app. Hence, this is a collaborative space for food enthusiasts to discover and share delicious dishes.
+The **YUMMY!** app is a **recipe search app** that enables users to search for recipes and view detailed information of each dish. users can also contribute by adding their own recipes to the app. Hence, this is a collaborative space for food enthusiasts to discover and share delicious dishes.
 
 ## Features
 
