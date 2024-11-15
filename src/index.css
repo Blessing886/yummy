@@ -195,6 +195,16 @@ body, .search-input {
   margin-top: 5px;
 }
 
+.recipe-details {
+  max-width: 800px;
+  margin: 2rem;
+  padding: 1.5rem;
+  border: 1px solid #111;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+
 .submit-container {
   width: 100%;
   max-width: 600px;
